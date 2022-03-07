@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="./descuentos.js"></script>
     <title>Calculadora Descuentos</title>
 </head>
@@ -12,17 +16,23 @@
         <h1>Calculadora Descuentos</h1>
     </header>
     <main>
-        <p>Este proyecto es una calculadora de precio final despues de un descuento</p>
+        <p>Este proyecto consiste en calcular el precio final de un producto despues de aplicarle un descuento.</p>
+        <span></span>
         <section class="calculator-box">
-            <label for="TotalPrice">Precio inicial:</label>
-            <input type="number" id="TotalPrice">
-            <label for="Percent">Descuento a aplicar:</label>
-            <input type="number" id="Percent">
+            <div class="First-div">
+                <label for="TotalPrice">Precio inicial:</label>
+                <input type="number" id="TotalPrice">
+            </div>
+            <div class="Second-div">
+                <label for="Percent">Descuento:</label>
+                <input type="number" id="Percent">
+            </div>
             <button type="button" onclick="MainAction()">Calcular</button>
             <div class ="result-container">
                 <p id="FinalResult"></p>
             </div>
         </section>
+        <p>Diseñado y programado por Manuel Cruz</p>
     </main>
 </body>
 </html>
